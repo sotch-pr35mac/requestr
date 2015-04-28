@@ -29,7 +29,7 @@ $(document).ready(function() {
     var greeting = "Hello "+customerName+", \n";
     var sent1 = "Thank you for reaching out to us about your "+deviceMake+" "+deviceModel+". ";
     var sent2 = "Im sorry to hear that your device is broken. Unfortunately, we do not have enough information about your device to give an accurate estimate. Feel free to bring your device into one of our locations, or reach out to us by phone at 1.269.216.4801 or email tech@kalamazoo-cpr.com. \n";
-    var sent3 = message+" .\n";
+    var sent3 = message+".\n";
     var sent4 = "Something that sets us apart from other repair facilities is our warranty. We offer an in-store Limited 6-Month Warranty on all repairs (excluding water damage, physical damage, and game system repairs) and a 6-month Worldwide Warranty at any of our 200+ stores. If you would like to compare our prices, remember to always inquire about their warranty. In most cases it may only be a few weeks or months. We understand that your phones and gadgets are extremely important and we want to ensure you that we care just as much as you do, and thats what allows us to offer a six month warranty. We stand by our work. We also buy, sell, and trade phones. If you have any older phones that are lying around, gathering dust, why not trade it in and use that cash or credit towards this repair? \n";
     var sent5 = "Please call us at (269-216-4801) if you have any additional questions or concerns. \n";
     var sent6 = "Thanks again for your interest, \n";
