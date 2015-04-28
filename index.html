@@ -1,0 +1,113 @@
+<html>
+  <head>
+    <title>Kalamazoo CPR Estimate Request Generator</title>
+    <meta author="Preston Stosur-Bassett">
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="styles/sweetalert.css">
+    <script src="js/sweetalert.min.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+    <script type="text/javascript" src="js/preload.js"></script>
+  </head>
+
+  <body>
+    <!-- BEGIN NAVBAR -->
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-main">
+            <span class="sr-only">Toggle Navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">CPR Estimate Requestr</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbar-main">
+          <ul class="nav navbar-nav">
+            <li><a href="https://cpr-900191.repairq.io/site/login">RepairQ <span class="sr-only">(current)</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- END NAVBAR -->
+
+    <!-- BEGIN BODY CONTENT -->
+    <div class="container">
+      <!-- BEGIN HEADER -->
+      <div class="jumbotron">
+        <h1>Estimate Generatr</h1>
+        <p>Welcome to Estimate Generator! Generate estimate request reponses faster and easier with Estimate Generatr. To begin, fill out the relavent information below.</p>
+        <a href="#standardForm" class="btn btn-success">Get Started</a> &nbsp; <a href="#" class="btn btn-default">Learn More</a>
+      </div>
+      <!-- END HEADER -->
+
+      <!-- BEGIN STANDARD FORM -->
+      <div id="standardForm">
+        <h3>Standard Information: </h3>
+        <div class="form-group">
+          <label for="employeeName">Employee Name*</label>
+          <input type="text" class="form-control" name="employeeName" id="employeeName" placeholder="YOUR First Name">
+        </div>
+        <div class="form-group">
+          <label for="customerName">Customer Name*</label>
+          <input type="text" class="form-control" name="customerName" id="customerName" placeholder="CUSTOMER's First Name">
+        </div>
+        <div class="form-group">
+          <label for="customerEmail">Customer Email*</label>
+          <input type="email" class="form-control" name="customerEmail" id="customerEmail" placeholder="CUSTOMER@someemail.com">
+        </div>
+        <div class="form-group">
+          <label for="deviceMake">Device Make*</label>
+          <input type="text" class="form-control" name="deviceMake" id="deviceMake" placeholder="Device Make">
+        </div>
+        <div class="form-group">
+          <label for="deviceModel">Device Model*</label>
+          <input type="text" class="form-control" name="deviceModel" id="deviceModel" placeholder="Device Model">
+        </div>
+        <div class="form-group">
+          <label for="repairOrNot">Device Repairable? / Have Enough Information?</label>
+          <input type="radio" name="repairOrNot" id="noRepairButton" value="No">&nbsp; Not Enough Information &nbsp;
+          <input type="radio" name="repairOrNot" id="repairButton" value="Yes">&nbsp; Yes, Enough Information &nbsp;
+        </div>
+      </div>
+      <!-- END STANDARD FORM -->
+      <!-- BEGIN REPAIR FORM -->
+      <br>
+      <div id="repairForm" style="display: none;">
+        <h3>Repair Information: </h3>
+        <div class="form-group">
+          <label for="repairEstimate">Repair Estimate*</label>
+          <input type="number" class="form-control" name="repairEstimate" id="repairEstimate" placeholder="65">
+        </div>
+        <div class="form-group">
+          <label for="repairSpecial">Special Message (optional)</label>
+          <textarea class="form-control" id="repairSpecial" name="repairSpecial"></textarea>
+        </div>
+      </div>
+      <!-- END REPAIR FORM -->
+      <br>
+      <!-- BEGIN NO-REPAIR FORM -->
+      <div id="noRepairForm" style="display: none;">
+        <h3>Not Enough Information: </h3>
+        <div class="form-group">
+          <label for="noRepairMessage">Message*</label>
+          <textarea class="form-control" id="noRepairMessage" name="noRepairMessage"></textarea>
+        </div>
+      </div>
+      <!-- END NO REPAIR FORM -->
+      <br>
+      <!-- BEGIN GO SECTION -->
+      <div id="goSection" style="display: none;">
+        <a href="#" id="getEstimate" class="btn btn-default">Get Estimate Request Response</a>
+      </div>
+      <!-- END GO SECTION -->
+    </div>
+    <!-- END BODY CONTENT -->
+    <br>
+    <br>
+    <br>
+  </body>
+</html>

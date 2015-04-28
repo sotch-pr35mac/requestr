@@ -1,0 +1,50 @@
+<html>
+  <head>
+    <title>Kalamazoo CPR Estimate Request Generator</title>
+    <meta author="Preston Stosur-Bassett">
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="styles/sweetalert.css">
+    <script src="js/sweetalert.min.js"></script>
+    <script type="text/javascript" src="js/interm.js"></script>
+  </head>
+
+  <body>
+    <!-- BEGIN NAVBAR -->
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-main">
+            <span class="sr-only">Toggle Navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">CPR Estimate Requestr</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbar-main">
+          <ul class="nav navbar-nav">
+            <li><a href="https://cpr-900191.repairq.io/site/login">RepairQ <span class="sr-only">(current)</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- END NAVBAR -->
+
+    <!-- BEGIN BODY CONTENT -->
+    <div class="container">
+      <div class="alert alert-danger"><p>Please proof read the following message before sending.</p></div>
+      <div class="alert alert-success"><p><b>Sending Instructions: </b>Either copy and paste the message to email it or click the Send Email button to have the message automatically be sent to the customer's email address from tech@kalamazoo-cpr.com</p></div>
+      <br>
+      <textarea rows="20" class="form-control" id="proof_read"></textarea>
+      <br>
+      <a href="#" class="btn btn-default pull-right" id="sendMessage">Send Message</a>
+    </div>
+    <!-- END BODY CONTENT -->
+    <br>
+    <br>
+    <br>
+  </body>
+</html>
