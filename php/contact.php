@@ -1,6 +1,6 @@
 <?php
-	$mailTo = "tech@kalamazoo-cpr.com";
-	$mailFrom = $_POST['email'];
+	$mailFrom = "tech@kalamazoo-cpr.com";
+	$mailTo = $_POST['email'];
 	$subject = $_POST['subject'];
 	$message = $_POST['message'];
 
