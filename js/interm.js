@@ -28,8 +28,17 @@ $(document).ready(function() {
     var message = $("#proof_read").val();
     var email = localStorage.customerEmail;
     var subject = "Your Repair Inquiry";
+    var store = localStorage.store;
+    var techEmail;
 
-    if(message != undefined || message != null || message != "" || message != " ") {
+    if(store == "kalamazoo") {
+      techEmail = "tech@kalamazoo-cpr.com";
+    }
+    else if(store == "portage") {
+      techEmail = "tech@cpr-portage.com";
+    }
+
+    if(message != undefined || message != null || message != "" || message != " " || techEmail == undefined || techEmail == null || techEmail == "" || techEmail == " ") {
       if(email != undefined || email != null || email != "" || message != " ") {
         //Send the message
         $.ajax({
@@ -38,7 +47,8 @@ $(document).ready(function() {
           data: {
             message: message,
             email: email,
-            subject: subject
+            subject: subject,
+            store: storeEmail
           },
           success: function(data) {
             if(data == "Message failed to send.") {

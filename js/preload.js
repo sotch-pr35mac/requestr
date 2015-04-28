@@ -9,4 +9,9 @@ $(document).ready(function(){
   if(localStorage.employee != null || localStorage.employee != undefined) {
     $("#employeeName").val(localStorage.employee);
   }
+
+  //If the location has already been set, set it again
+  if(localStorage.store != null || localStorage.store != undefined) {
+    $("#storeLocation").val(localStorage.store);
+  }
 });
