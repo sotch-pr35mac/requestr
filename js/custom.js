@@ -162,7 +162,7 @@ $(document).ready(function() {
       if(repairOrNot == "No") {
         //Compile the 'Not Enough Information Template'
         if(storeLocation == "kalamazoo") {
-          assembleNotRepairTemplateKalamazoo(employeeName, customerName, customerEmail, deviceMake, deviceModel, noRepairMeessage);
+          assembleNoRepairTemplateKalamazoo(employeeName, customerName, customerEmail, deviceMake, deviceModel, noRepairMeessage);
         }
         else if(storeLocation == "portage") {
           assembleNotRepairTemplatePortage(employeeName, customerName, customerEmail, deviceMake, deviceModel, noRepairMessage);

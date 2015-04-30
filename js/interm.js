@@ -24,6 +24,13 @@ $(document).ready(function() {
   }
 
   //OnClikListeners
+  $("#copyText").click(function() {
+    var textToCopy = $("#proof_read").val();
+    //Somehow copy the text to the clipboard here
+  });
+  $("#cancelSend").click(function() {
+    window.location.href = "index.html";
+  });
   $("#sendMessage").click(function() {
     var message = $("#proof_read").val();
     var email = localStorage.customerEmail;
